@@ -1,0 +1,119 @@
+/*Re-format*/
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+:root{
+    --greyColor:#747171;
+    --blueColorDark:#19355F;
+    --orageColor:#F1940F;
+    --colorBlue:#2B7CA9;
+    --paddingBottom: 1.6rem;
+}
+@font-face {
+    font-family: VisbyCF-Bold;
+    src: url("../fonts/VisbyCF-Bold.otf") format("opentype");
+}
+@font-face {
+    font-family:VisbyCF-Heavy;
+    src: url("../fonts/VisbyCF-Heavy.otf");
+}
+@font-face {
+    font-family: VisbyCF-DemiBold;
+    src: url("../fonts/VisbyCF-DemiBold.otf");
+}
+*{
+
+    color: var(--greyColor);
+    margin: 0;
+}
+
+body{
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.title{
+    font-size: 3.3146rem;
+    margin-bottom: var(--paddingBottom);
+}
+.subtitles{
+    font-family:VisbyCF-Bold;
+    font-size: 3.375rem;
+    margin-bottom: var(--paddingBottom);
+}
+p{
+    margin-bottom: var(--paddingBottom);
+}
+.flex{
+    display: flex;
+    align-items: center ;
+}
+.flex.space-between{
+    justify-content: space-between;
+}
+.gap-1{
+ gap: 1rem;
+}
+.gap-2{
+    gap: 2rem;
+}   
+.gap-3{
+    gap: 3rem;
+}  
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+.btn{
+    padding: 1rem 2.2rem;
+    border-radius: 20px;
+    color: white!important;
+    display: inline-block;
+    font-family: VisbyCF-Heavy;
+
+}
+.btn.orange{
+    background-color: var(--orageColor);
+}
+
+.btn.gradient{
+    padding: 1rem 2rem;
+    background: linear-gradient(360deg, #19355F 0%, #2CABE2 100%);
+}
+
+.copy-container, .image-container{
+    width: 50%;
+}
+
+.blue{
+    color: var(--colorBlue);
+}
+.white{
+    color: white;
+}
+
+.backgroundBlue{
+    background-color: var(--blueColorDark);
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.alignCenter{
+    text-align: center;
+}
+.alignLeft{
+    text-align: left;
+}
+.alignRight{
+    text-align: right;
+}
+
+.logo{
+    width: 5.95rem;
+}
