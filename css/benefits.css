@@ -1,0 +1,32 @@
+.benefits{
+    background-image: url("../images/06\ background\ benefetis.webp");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+.benefits .container{
+    gap: 1.5rem;
+}
+.benefit-container{
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 20px;
+}
+.benefit-container h3{
+    font-size:0.9em ;
+    text-transform: uppercase;
+    color: var(--blueColorDark);
+    margin-bottom: 1.5rem;
+    font-family: VisbyCF-Bold;
+    font-weight: bold;
+}
+.benefit-container p{
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+.icon{
+    width: auto;
+    height: 65px;
+    margin-bottom: 1.5rem;
+}

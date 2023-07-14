@@ -2,6 +2,9 @@
 li{
     list-style: none;
 }
+ul{
+    padding: 0;
+}
 a{
     text-decoration: none;
 }
@@ -10,6 +13,7 @@ a{
     --blueColorDark:#19355F;
     --orageColor:#F1940F;
     --colorBlue:#2B7CA9;
+    --colorSkyblue:#00AEEF;
     --paddingBottom: 1.6rem;
 }
 @font-face {
@@ -23,6 +27,10 @@ a{
 @font-face {
     font-family: VisbyCF-DemiBold;
     src: url("../fonts/VisbyCF-DemiBold.otf");
+}
+@font-face {
+    font-family: VisbyCF-Medium;
+    src: url("../fonts/VisbyCF-Medium.otf");
 }
 *{
 
@@ -39,12 +47,13 @@ body{
     margin-bottom: var(--paddingBottom);
 }
 .subtitles{
-    font-family:VisbyCF-Bold;
+    font-family:VisbyCF-Heavy;
     font-size: 3.375rem;
     margin-bottom: var(--paddingBottom);
 }
 p{
     margin-bottom: var(--paddingBottom);
+    font-family:VisbyCF-Medium;
 }
 .flex{
     display: flex;
@@ -52,6 +61,19 @@ p{
 }
 .flex.space-between{
     justify-content: space-between;
+}
+.grid{
+    display: grid;
+    gap: 3.3rem;
+}
+.grid.Colum3{
+    grid-template-columns: repeat(auto-fill, minmax(30%,1fr));
+}
+.grid.Colum4{
+    grid-template-columns: repeat(auto-fill, minmax(20%,1fr));
+}
+.grid.center{
+    place-items: center;
 }
 .gap-1{
  gap: 1rem;
@@ -65,7 +87,7 @@ p{
 .container{
     max-width: 1170px;
     margin: 0 auto;
-    padding: 2rem 1rem;
+    padding: 4rem 1rem;
 }
 .btn{
     padding: 1rem 2.2rem;
@@ -77,6 +99,9 @@ p{
 }
 .btn.orange{
     background-color: var(--orageColor);
+}
+.btn.skyblue{
+    background-color: var(--colorSkyblue);
 }
 
 .btn.gradient{
@@ -94,6 +119,14 @@ p{
 .white{
     color: white;
 }
+
+.darkBlue{
+    color: var(--blueColorDark);
+}
+.orange{
+    color: var(--orageColor);
+}
+
 
 .backgroundBlue{
     background-color: var(--blueColorDark);
@@ -116,4 +149,10 @@ img{
 
 .logo{
     width: 5.95rem;
+}
+.margin-cero{
+    margin: 0;
+}
+.margin-2rem{
+    margin-bottom: 2rem;
 }
